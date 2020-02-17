@@ -123,7 +123,7 @@ public class ConexaoSQLite extends SQLiteOpenHelper {
 
                 listarClientes.add(clientes);
 
-            } while (cursor.moveToFirst());
+            } while (cursor.moveToNext());
         }
 
 

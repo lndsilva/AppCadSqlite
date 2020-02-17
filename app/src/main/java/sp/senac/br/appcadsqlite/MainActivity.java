@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> adaptador;
         ArrayList<String> arrayList;
 
-        /*
+
         db.adicionarClientes(new Clientes("Senac Largo Treze", "37373900", "sac@sp.senac.br"));
         db.adicionarClientes(new Clientes("João Antonio", "39696900", "jantonio@sp.senac.br"));
         db.adicionarClientes(new Clientes("Maria do Carmo", "55228877", "mariacarmo@sp.senac.br"));
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(getApplicationContext(), "Cliente Adicionado!!!", Toast.LENGTH_SHORT).show();
 
-        Clientes clientes = new Clientes();
+       /* Clientes clientes = new Clientes();
         clientes.setCodigo(9);
         db.excluirClientes(clientes);
 
@@ -92,10 +92,6 @@ public class MainActivity extends AppCompatActivity {
         adaptador = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, arrayList);
 
         listViewClientes.setAdapter(adaptador);
-
-       /* for (Clientes c: clientes){
-            Log.d("Lista ","\n ID: "+c.getCodigo() +"Nome: "+ c.getNome());
-        }*/
 
     }
 }
